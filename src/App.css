@@ -1,0 +1,45 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.converter {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.converter-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.converter-inputs input,
+.converter-inputs select {
+  width: 45%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.converter-result h3 {
+  text-align: center;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .converter-inputs {
+    flex-direction: column;
+  }
+
+  .converter-inputs input,
+  .converter-inputs select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
